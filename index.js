@@ -178,20 +178,21 @@ registration(users)
 
 //Question 8
 
-function examRetake() {
-
-
+function examRetake(score) {
+    let attempt = 1
+    if(score>=50){
+        console.log("Sudent shouldn't take the exam again")
+    }
+   else{
     do {
-        console.log(`Attempt ${attempt}: ${score}`)
+        console.log(`Attempt ${attempt}: score is ${score}`)
         score += 10
         attempt++;
     }
 
     while (score < 50)
-    if (score >= 50) {
-        console.log("Student has passed the test")
-    }
-}
-let score = 15
-let attempt = 1
-examRetake()
+    
+}}
+
+
+examRetake(27)
