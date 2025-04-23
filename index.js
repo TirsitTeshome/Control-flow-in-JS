@@ -26,7 +26,7 @@ function voteProcess(votes) {
     let i = 0
 
     do {
-        console.log(`vote processed: ${votes[i]}`)
+        console.log(`Vote processed: ${votes[i]}`)
         i++
     }
 
@@ -165,13 +165,13 @@ weather(tempratures)
 function registration(users) {
     while (users.length > 0) {
         const user = users.shift()
-        console.log(`registering user is: ${user}`)
+        console.log(`Registering user is: ${user}`)
     }
 
-    console.log("registration queue is empty")
+    console.log("Registration queue is empty")
 }
 
-let users = ["Tirsit", "helen", "arsema", "fana"]
+let users = ["Tirsit", "Amanuel", "Sam", "Berihu"]
 registration(users)
 
 
@@ -182,14 +182,14 @@ function examRetake() {
 
 
     do {
-        console.log(`attempt ${attempt}: ${score}`)
+        console.log(`Attempt ${attempt}: ${score}`)
         score += 10
         attempt++;
     }
 
     while (score < 50)
     if (score >= 50) {
-        console.log("Student passed the test")
+        console.log("Student has passed the test")
     }
 }
 let score = 15
